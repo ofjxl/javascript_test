@@ -1,0 +1,51 @@
+html {
+    scroll-behavior: smooth;
+}
+header {
+    position: absolute;
+    position: fixed; left: 35px; top: 60px;
+}
+header h1 {
+    font-size: 2.15rem; font-weight: 500;
+    margin-bottom: 20px;
+    color: #eee8e8;
+}
+header nav {}
+header nav a {
+    font-size: 1.375rem; color: #eee8e8;
+    padding-right: 10px;
+}
+header nav a:hover {
+    border-bottom: 2px solid #c5c1c1;
+    text-align: center;
+}
+main {}
+main .bg {
+    height: 100vh; background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+main .bg1 {background-image: url(../images/bg1.jpg);}
+main .bg2 {background-image: url(../images/bg2.jpg);}
+main .bg3 {background-image: url(../images/bg3.jpg);}
+main .bg4 {background-image: url(../images/bg4.jpg);}
+/* 꾸미는 라인 - javascript */
+.link {
+    display: flex; flex-flow: column wrap;
+    position: fixed; letter-spacing: 50px; top: 50%; transform: translageY(-50%);
+}
+.link a {
+    background-color: #eee8e8;
+    width: 25px; height: 2px; margin-bottom: 10px;
+    transition: all 0.5s;
+    margin-left: 35px;
+}
+.link a:hover {background-color: #555;}
+.link .active {width: 100px; background-color: #fff;}
+/* mouse design */
+.mouse {
+    position: fixed; left: 0; top: 0; /* 초기 위치 */
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* 마우스 클릭 대상 해체 필수! */
+}
+.mouse img {width: 64px; height: 64px;}
